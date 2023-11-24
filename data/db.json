@@ -48,6 +48,25 @@
       "method": "blah blah blah",
       "cookingTime": "45 minutes",
       "id": "LZj1Zkp"
+    },
+    {
+      "title": "Curry",
+      "ingredients": [
+        "food",
+        "lol"
+      ],
+      "method": "blah, blah",
+      "cookingTime": "1 minutes",
+      "id": "y3bqFdV"
+    },
+    {
+      "title": "Nah",
+      "ingredients": [
+        "nah"
+      ],
+      "method": "nah",
+      "cookingTime": "1 minutes",
+      "id": "ex9YUB5"
     }
   ]
 }
