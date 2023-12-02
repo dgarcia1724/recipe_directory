@@ -17,11 +17,10 @@ function Recipe() {
   useEffect(() => {
     setIsPending(true);
 
-    projectFirestore
+    const unsub = projectFirestore
       .collection("recipes")
       .doc(id)
-      .get()
-      .then((doc) => {
+      .onSnapshot((doc) => {
         if (doc.exists) {
           setIsPending(false);
           setRecipe(doc.data());
@@ -30,6 +29,8 @@ function Recipe() {
           setError("Could not find that recipe");
         }
       });
+
+    return () => unsub();
   }, [id]);
 
   const handleClick = () => {
